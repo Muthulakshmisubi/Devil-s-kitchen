@@ -1,0 +1,368 @@
+body{
+    background-color: aliceblue;
+    font-family:system-ui;
+
+}
+.container {
+    inline-size: 1000px;
+    margin: auto;
+    transition: 0.5s;
+   
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-block-start: 50px;
+  }
+  
+  header .shopping {
+    position: relative;
+    text-align: end;
+  }
+  
+  header .shopping img {
+    inline-size: 40px;
+  }
+  header .shopping span {
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    inset-block-start: -5px;
+    inset-inline-start: 80%;
+    padding: 3px 10px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-block-start: 50px;
+}
+.card {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 100%;
+    inline-size: 500px;
+    background-color: #453E3B;
+    block-size: 100vh;
+    transition: 0.5s;
+}
+
+.card h1 {
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    block-size: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut {
+    position: absolute;
+    inset-block-end: 0;
+    inline-size: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div {
+    background-color: #E8BC0E;
+    inline-size: 100%;
+    block-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(2){
+    background-color:black;
+    color:#fff
+}
+.active .card{
+    inset-inline-start: calc(100% - 500px);
+}
+.active .container{
+    transform:translatex(-200px);
+}
+.list .item{
+    text-align: center;
+    background-color: aliceblue;
+    padding:20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+.list .item img {
+    inline-size: 90%;
+  }
+  
+  .list .item .title {
+    font-weight: 600;
+  }
+  
+  .list .item .price {
+    margin: 10px;
+  }
+  
+  .list .item button {
+    background-color: #1C1F25;
+    color: #fff;
+    padding: 10px;
+    inline-size: 100%;
+  }
+  
+
+  .listCard li{
+    display: flex;
+    grid-template-columns: 100px repeat(3,1fr);
+    color:#fff;
+    row-gap:10px;
+    margin-block-end:20px;
+
+  }
+
+  .listCard li{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+  }
+  .listCard li img{
+    inline-size:90%;
+
+  }
+  .listCard button{
+    inline-size:auto;
+    background-color: #797070;
+    border:none;
+  }
+  .listCard .count{
+    margin:0 10px;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 100vh;
+    background: url(./image/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .wrapper{
+    inline-size: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+  }
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+  }
+  .wrapper .input-box{
+    position: relative;
+    inline-size: 100%;
+    block-size: 50px;
+    
+    margin: 30px 0;
+  }
+  .input-box input{
+    inline-size: 100%;
+    block-size: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+  }
+  .input-box input::placeholder{
+    color: #fff;
+  }
+  .input-box i{
+    position: absolute;
+    inset-inline-end: 20px;
+    inset-block-start: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  
+  }
+  .wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+  }
+  .remember-forgot label input{
+    accent-color: #fff;
+    margin-inline-end: 3px;
+  
+  }
+  .remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+  
+  }
+  .remember-forgot a:hover{
+    text-decoration: underline;
+  }
+  .wrapper .btn{
+    inline-size: 100%;
+    block-size: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  .wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  
+  }
+  .register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .register-link p a:hover{
+    text-decoration: underline;
+  }
+  
+
+
+/*Team*/
+
+.team{
+  width: 100%;
+  height: 90vh;
+
+  background-size: cover;
+  background-position: center;
+}
+.bio{
+  color: aliceblue;
+}
+
+.team h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.team h1 span{
+  color: #fac031;
+  margin-left: 15px;
+  font-family: mv boli;
+}
+
+.team h1 span::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.team .team_box{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 13%;
+}
+
+.team .team_box .profile{
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover{
+  border-radius: 20px;
+  height: 320px;
+}
+
+.team .team_box .profile img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover img{
+  border-radius: 20px;
+  margin-top: -230px;
+}
+
+.team .team_box .profile .info{
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info{
+  top: 60%;
+}
+
+.team .team_box .profile .info .name{
+  color: #fac031;
+  margin-bottom: 15px;
+}
+
+.team .team_box .profile .info .bio{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+}
+
+.team .team_box .profile .info .team_icon i{
+  margin: 10px 5px 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+  color: #fac031;
+}
+

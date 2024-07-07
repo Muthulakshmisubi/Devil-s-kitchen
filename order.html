@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+        }
+        .menu {
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        .menu-item img {
+            width: 200px;
+            height: 200px;
+        }
+        .sidebar {
+            width: 200px;
+            position: sticky;
+            top: 20px;
+            height: 100vh;
+            padding-top: 20px;
+        }
+        .order-now {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ff6a00;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .text-orange {
+            color: #ff4500;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 40px;
+        }
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #ff6a00;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a img {
+            margin-right: 10px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="row d-flex justify-content-between">
+        
+    <div class="sidebar col-sm-3 ">
+        <h2 class="text-orange p-2">Go For Hunt</h2>
+        <ul>
+            <li><a href="#one"><img src="./images/biryani/kashmiri.pulao.jpg" alt="Biryani">Biryani</a></li>
+            <li><a href="#two"><img src="./images/chicken/Chicken_roast.jpg" alt="Chicken">Chicken</a></li>
+            <li><a href="#three"><img src="./images/chinese/szechuan-chicken.jpg" alt="Paneer">chinese</a></li>
+            <li><a href="#four"><img src="./images/paneer/paneer-butter-masala.jpg" alt="Vegetable">panner</a></li>
+            <li><a href="#five"><img src="./images/south indian/onion-uttapam.jpg" alt="Chinese">south Indian</a></li>
+            <li><a href="#six"><img src="./images/vegetable/vegetable-kolhapuri.jpg" alt="South Indian">Vegetable</a></li>
+        </ul>
+    </div>
+
+    <div class="container col-sm-8  ">
+        <div class="div4 p-2">
+            <div class="div3" id="one">
+            <h1 class="text-orange p-2">Biryani</h1>
+            <div class="menu">
+                <div class="menu-item">
+                    <div class="discount">-20%</div>
+                    <img src="./images/biryani/Ambur-Chicken-Biryani.jpg" alt="Bell Burrito Supreme">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>Ambur biriyani</h3>
+                        <h2></h2>
+                        <p class="price"><span>$69.00</span> $59.00</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="discount">-5%</div>
+                    <img src="./images/biryani/Chicken-Biryani-hyd.jpg" alt="Kung Pao Chicken BBQ">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>Hyderabadi Biryani</h3>
+                        <h2></h2>
+                        <p class="price"><span>$69.00</span> $49.00</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="discount">-15%</div>
+                    <img src="./images/biryani/Ambur-Chicken-Biryani.jpg" alt="Wendy's Chicken">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>Egg Biryani</h3>
+                        <h2></h2>
+                        <p class="price"><span>$69.00</span> $49.00</p>
+                    </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="discount">-15%</div>
+                        <img src="./images/biryani/egg-biryani.jpeg" alt="Wendy's Chicken">
+                        <div class="order-now">Order Now</div>
+                        <div class="info">
+                            <h3>Goan Fish Biryani</h3>
+                            <h2></h2>
+                            <p class="price"><span>$69.00</span> $49.00</p>
+                        </div>
+</div>
+                    
+                        <div class="menu-item">
+                            <div class="discount">-15%</div>
+                            <img src="./images/biryani/goan-fish-biryani.jpg" alt="Wendy's Chicken">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Chicken</h3>
+                                <h2>Wendy's Chicken</h2>
+                                <p class="price"><span>$69.00</span> $49.00</p>
+                            </div></div>
+                            <div class="menu-item">
+                                <div class="discount">-15%</div>
+                                <img src="./images/biryani/hyd-Mutton-Biryani.jpg" alt="Wendy's Chicken">
+                                <div class="order-now">Order Now</div>
+                                <div class="info">
+                                    <h3>Mutton Biryani</h3>
+                                    <h2></h2>
+                                    <p class="price"><span>$69.00</span> $49.00</p>
+                                </div></div>
+               
+            </div>
+        </div>
+        <div class="div3"  id="two">
+            <h1 class="text-orange p-2">Chicken delicious</h1>
+            <div class="menu">
+                <div class="menu-item">
+                    <div class="discount">-20%</div>
+                    <img src="./images/chicken/Chicken-Curry.jpg" alt="Bell Burrito Supreme">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>Burrito</h3>
+                        <h2>Chicken-Curry</h2>
+                        <p class="price"><span>$69.00</span> $59.00</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="discount">-5%</div>
+                    <img src="./images/chicken/Chicken-do-Pyaza.jpg" alt="Kung Pao Chicken BBQ">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>Nuggets</h3>
+                        <h2>Chicken-do-Pyaza</h2>
+                        <p class="price"><span>$69.00</span> $49.00</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="discount">-15%</div>
+                    <img src="./images/chicken/Chicken-Masala.jpeg" alt="Wendy's Chicken">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>Chicken</h3>
+                        <h2>Chicken-Masala</h2>
+                        <p class="price"><span>$69.00</span> $49.00</p>
+                    </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="discount">-15%</div>
+                        <img src="./images/chicken/Chicken_roast.jpg" alt="Wendy's Chicken">
+                        <div class="order-now">Order Now</div>
+                        <div class="info">
+                            <h3>Chicken</h3>
+                            <h2>Chicken_roast</h2>
+                            <p class="price"><span>$69.00</span> $49.00</p>
+                        </div>
+</div>
+                    
+                        <div class="menu-item">
+                            <div class="discount">-15%</div>
+                            <img src="./images/chicken/Handi-chicken.jpg" alt="Wendy's Chicken">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Chicken</h3>
+                                <h2>Handi-chicken</h2>
+                                <p class="price"><span>$69.00</span> $49.00</p>
+                            </div></div>
+                            <div class="menu-item">
+                                <div class="discount">-15%</div>
+                                <img src="./images/chicken/Murgh-Musallam.jpg" alt="Wendy's Chicken">
+                                <div class="order-now">Order Now</div>
+                                <div class="info">
+                                    <h3>Chicken</h3>
+                                    <h2>Murgh-Musallam</h2>
+                                    <p class="price"><span>$69.00</span> $49.00</p>
+                                </div></div>
+               
+            </div>
+    </div>
+    <div class="div3"  id="three">
+        <h1 class="text-orange p-2">Chinese</h1>
+        <div class="menu">
+            <div class="menu-item">
+                <div class="discount">-20%</div>
+                <img src="./images/chinese/cabbage-momos-.jpg" alt="Bell Burrito Supreme">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>chinese</h3>
+                    <h2>cabbage-momos</h2>
+                    <p class="price"><span>$69.00</span> $59.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="discount">-5%</div>
+                <img src="./images/chinese/ChickenManchurian.jpg" alt="Kung Pao Chicken BBQ">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>chinese</h3>
+                    <h2>ChickenManchurian</h2>
+                    <p class="price"><span>$69.00</span> $49.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="discount">-15%</div>
+                <img src="./images/chinese/Chili-Chicken.jpg" alt="Wendy's Chicken">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>Chinese</h3>
+                    <h2>Chili-Chicken</h2>
+                    <p class="price"><span>$69.00</span> $49.00</p>
+                </div>
+                </div>
+                <div class="menu-item">
+                    <div class="discount">-15%</div>
+                    <img src="./images/chinese/chowmin.jpg" alt="Wendy's Chicken">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>Chinese</h3>
+                        <h2>chowmin</h2>
+                        <p class="price"><span>$69.00</span> $49.00</p>
+                    </div>
+</div>
+                
+                    <div class="menu-item">
+                        <div class="discount">-15%</div>
+                        <img src="./images/chinese/mmos.jpg" alt="Wendy's Chicken">
+                        <div class="order-now">Order Now</div>
+                        <div class="info">
+                            <h3>Chicken</h3>
+                            <h2>mmos</h2>
+                            <p class="price"><span>$69.00</span> $49.00</p>
+                        </div></div>
+                        <div class="menu-item">
+                            <div class="discount">-15%</div>
+                            <img src="./images/chinese/spring-rolls.jpg" alt="Wendy's Chicken">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Chicken</h3>
+                                <h2>spring-rolls</h2>
+                                <p class="price"><span>$69.00</span> $49.00</p>
+                            </div></div>
+           
+        </div>
+    </div>
+    <div class="div3"  id="four">
+        <h1 class="text-orange p-2">Paneer</h1>
+        <div class="menu">
+            <div class="menu-item">
+                <div class="discount">-20%</div>
+                <img src="./images/paneer/Matar-Paneer.jpg" alt="Bell Burrito Supreme">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>paneer</h3>
+                    <h2>Matar-Paneer</h2>
+                    <p class="price"><span>$69.00</span> $59.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="discount">-5%</div>
+                <img src="./images/paneer/palak-paneer.jpg" alt="Kung Pao Chicken BBQ">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>paneer</h3>
+                    <h2>palak-paneer</h2>
+                    <p class="price"><span>$69.00</span> $49.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="discount">-15%</div>
+                <img src="./images/paneer/paneer-butter-masala.jpg" alt="Wendy's Chicken">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>panner</h3>
+                    <h2>paneer-butter-masala</h2>
+                    <p class="price"><span>$69.00</span> $49.00</p>
+                </div>
+                </div>
+                <div class="menu-item">
+                    <div class="discount">-15%</div>
+                    <img src="./images/paneer/Paneer-Do-Pyaza.jpg" alt="Wendy's Chicken">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>paneer</h3>
+                        <h2>Paneer-Do-Pyaza</h2>
+                        <p class="price"><span>$69.00</span> $49.00</p>
+                    </div>
+</div>
+                
+                    <div class="menu-item">
+                        <div class="discount">-15%</div>
+                        <img src="./images/paneer/Paneer-Hyderabadi.jpg" alt="Wendy's Chicken">
+                        <div class="order-now">Order Now</div>
+                        <div class="info">
+                            <h3>paneer</h3>
+                            <h2>Paneer-Hyderabadi</h2>
+                            <p class="price"><span>$69.00</span> $49.00</p>
+                        </div></div>
+                        <div class="menu-item">
+                            <div class="discount">-15%</div>
+                            <img src="./images/paneer/paneer-lababdar.jpg" alt="Wendy's Chicken">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>paneer</h3>
+                                <h2>paneer-lababdar</h2>
+                                <p class="price"><span>$69.00</span> $49.00</p>
+                            </div></div>
+           
+        </div>
+    </div>
+    <div class="div3"  id="five">
+        <h1 class="text-orange p-2">South Indian</h1>
+        <div class="menu">
+            <div class="menu-item">
+                <div class="discount">-20%</div>
+                <img src="./images/south indian/Butter-Masala-Dosa.png" alt="Bell Burrito Supreme">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>Burrito</h3>
+                    <h2>Butter-Masala-Dosa</h2>
+                    <p class="price"><span>$69.00</span> $59.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="discount">-5%</div>
+                <img src="./images/south indian/idli-with-rice-flour.jpg" alt="Kung Pao Chicken BBQ">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>Nuggets</h3>
+                    <h2>idli-with-rice-flour</h2>
+                    <p class="price"><span>$69.00</span> $49.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="discount">-15%</div>
+                <img src="./images/south indian/masala-dosa.jpg" alt="Wendy's Chicken">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>south indian</h3>
+                    <h2>masala-dosa</h2>
+                    <p class="price"><span>$69.00</span> $49.00</p>
+                </div>
+                </div>
+                <div class="menu-item">
+                    <div class="discount">-15%</div>
+                    <img src="./images/south indian/mysore-bonda.jpg" alt="Wendy's Chicken">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>Chicken</h3>
+                        <h2>mysore-bonda</h2>
+                        <p class="price"><span>$69.00</span> $49.00</p>
+                    </div>
+</div>
+                
+                    <div class="menu-item">
+                        <div class="discount">-15%</div>
+                        <img src="./images/south indian/onion-uttapam.jpg" alt="Wendy's Chicken">
+                        <div class="order-now">Order Now</div>
+                        <div class="info">
+                            <h3>Chicken</h3>
+                            <h2>onion-uttapam</h2>
+                            <p class="price"><span>$69.00</span> $49.00</p>
+                        </div></div>
+                        <div class="menu-item">
+                            <div class="discount">-15%</div>
+                            <img src="./images/south indian/plain-dosa.jpeg" alt="Wendy's Chicken">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>south indian</h3>
+                                <h2>plain-dosa</h2>
+                                <p class="price"><span>$69.00</span> $49.00</p>
+                            </div></div>
+           
+        </div>
+    </div>
+    <div class="div3"  id="six">
+        <h1 class="text-orange p-2">vegetable</h1>
+        <div class="menu">
+            <div class="menu-item">
+                <div class="discount">-20%</div>
+                <img src="./images/vegetable/navratan-korma_-vegetable.png" alt="Bell Burrito Supreme">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>vegetable</h3>
+                    <h2>Bell Burrito Supreme</h2>
+                    <p class="price"><span>$69.00</span> $59.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="discount">-5%</div>
+                <img src="./images/vegetable/VEG-JALFREZI.jpg" alt="Kung Pao Chicken BBQ">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>vegetable</h3>
+                    <h2>Kung Pao Chicken BBQ</h2>
+                    <p class="price"><span>$69.00</span> $49.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="discount">-15%</div>
+                <img src="./images/vegetable/vegetable-biryani.jpg" alt="Wendy's Chicken">
+                <div class="order-now">Order Now</div>
+                <div class="info">
+                    <h3>vegetable</h3>
+                    <h2>vegetable-biryani</h2>
+                    <p class="price"><span>$69.00</span> $49.00</p>
+                </div>
+                </div>
+                <div class="menu-item">
+                    <div class="discount">-15%</div>
+                    <img src="./images/vegetable/vegetable-curry.jpeg" alt="Wendy's Chicken">
+                    <div class="order-now">Order Now</div>
+                    <div class="info">
+                        <h3>vegetable</h3>
+                        <h2>vegetable-curry</h2>
+                        <p class="price"><span>$69.00</span> $49.00</p>
+                    </div>
+</div>
+                
+                    <div class="menu-item">
+                        <div class="discount">-15%</div>
+                        <img src="./images/vegetable/vegetable-kolhapuri.jpg" alt="Wendy's Chicken">
+                        <div class="order-now">Order Now</div>
+                        <div class="info">
+                            <h3>Chicken</h3>
+                            <h2>vegetable-kolhapuri</h2>
+                            <p class="price"><span>$69.00</span> $49.00</p>
+                        </div></div>
+                        <div class="menu-item">
+                            <div class="discount">-15%</div>
+                            <img src="./images/vegetable/vegetable-masala.jpg" alt="Wendy's Chicken">
+                            <div class="order-now">Order Now</div>
+                            <div class="info">
+                                <h3>Chicken</h3>
+                                <h2>Wendy's Chicken</h2>
+                                <p class="price"><span>$69.00</span> $49.00</p>
+                            </div></div>
+           
+        </div>
+    </div>
+  
+    </div>
+    
+    </div>
+    </div>
+    </div>
+        
+
+    <script>
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.querySelector('.order-now').style.display = 'block';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('.order-now').style.display = 'none';
+            });
+        });
+
+    
+            document.querySelectorAll('.menu-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    // Assuming you have stored item details in data attributes or JavaScript objects
+                    const itemName = item.querySelector('.info h2').innerText;
+                    const itemPrice = item.querySelector('.info .price span').innerText;
+        
+                    // Store data in localStorage (or you can use session storage or send it via query parameters to order.html)
+                    localStorage.setItem('itemName', itemName);
+                    localStorage.setItem('itemPrice', itemPrice);
+        
+                    // Redirect to order.html
+                    window.location.href = 'order2.html';
+                });
+            });
+     
+        
+    </script>
+</body>
+</html>
